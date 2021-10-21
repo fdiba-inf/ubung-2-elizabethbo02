@@ -6,7 +6,6 @@ public class QuadraticEquation {
 
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-
     double a = input.nextDouble();
     double b = input.nextDouble();
     double c = input.nextDouble();
@@ -19,14 +18,13 @@ public class QuadraticEquation {
       if (D >= 0) {
         x1 = ((b * - 1) + Math.sqrt(D)) / (2 * a);
         x2 = ((b * - 1) - Math.sqrt(D)) / (2 * a);
-        System.out.println("x1");
-        System.out.println("x2");
+        System.out.println("Ausgabe" + x1 + x2);
         } else {
         System.out.println("Imaginary values");
       }
       } else if (b != 0) {
         x = (- c) / b;
-        System.out.println("x");
+        System.out.println(x);
       } else if (c != 0) {
           System.out.println("No values");
       } else {
